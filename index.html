@@ -5,57 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js"></script>
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
 <nav>
-    <a href="">WebStudio</a>
-    <ul>
-        <li><a href="">Студія</a></li>
-        <li><a href="">Портфоліо</a></li>
-        <li><a href="">Контакти</a></li>
+    <a href="" class="logo"><span class="logo-part">Web</span>Studio</a>
+    <ul class="site-nav list">
+        <li ><a class="link" href="">Студія</a></li>
+        <li ><a class="link" href="">Портфоліо</a></li>
+        <li ><a class="link" href="">Контакти</a></li>
     </ul>
 </nav>
-
-        <ul>
-            <li><a href="">Email</a></li>
-            <li><a href="">Phone</a></li>
+        <ul  class="auth-nav list">
+            <li><a class="link" href="">Email</a></li>
+            <li><a class="link" href="">Phone</a></li>
         </ul>
     </header>
     <!-- Main -->
     <main>
         <div>
-            <section>
-                <h1>Ефективні рішення для вашого бізнесу</h1>
-                <button>Замовити послугу</button>
+            <section class="hero">
+                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+                <button class="button">Замовити послугу</button>
             </section>
         </div>
-        <section>
-            <h2>Секція переваг</h2>
-            <ul>
+        <section class="section">
+            <h2 class="section-title">Секція переваг</h2>
+            <ul class="feature-list list">
                 <li>
-                    <h3>Увага до деталей</h3>
+                    <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
                     <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                 </li>
                 <li>
-                    <h3>Увага до деталей</h3>
-                    <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                    <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
+                    <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                 </li>
                 <li>
-                    <h3>Увага до деталей</h3>
-                    <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                    <h3 class="title">ПЛАНУВАННЯ</h3>
+                    <p>Так само консультація з широким активом значною мірою зумовлює.</p>
                 </li>
                 <li>
-                    <h3>Увага до деталей</h3>
-                    <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                    <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Чим ми займаємося</h2>
-            <ul>
+        <section class="section">
+            <h2 class="section-title">Чим ми займаємося</h2>
+            <ul class="work-list list">
                 <li>
                     <img src="./images/box1.jpg" alt="1">
                 </li>
@@ -67,35 +70,35 @@
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Наша команда</h2>
-            <ul>
+        <section class="section">
+            <h2 class="section-title">Наша команда</h2>
+            <ul class="team-list list">
                 <li>
                     <div>
-                        <img src="#" alt="1">
-                        <h4>Пупкін Залупкін</h4>
-                        <p>Девелопер</p>
+                        <img src="./images/photo1.jpg" width="270" alt="1">
+                        <h4 class="name">Ігор Дем'яненко</h4>
+                        <p>Product Designer</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="#" alt="2">
-                        <h4>Пупкін Залупкін</h4>
-                        <p>Девелопер</p>
+                        <img src="./images/photo2.jpg" width="270" alt="2">
+                        <h4 class="name">Ольга Рєпіна</h4>
+                        <p>Frontend Developer</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="#" alt="3">
-                        <h4>Пупкін Залупкін</h4>
-                        <p>Девелопер</p>
+                        <img src="./images/photo3.jpg" width="270" alt="3">
+                        <h4 class="name">Микола Тарасов</h4>
+                        <p>Marketing</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="#" alt="4">
-                        <h4>Пупкін Залупкін</h4>
-                        <p>Девелопер</p>
+                        <img src="./images/photo4.jpg" width="270" alt="4">
+                        <h4 class="name">Михайло Єрмаков</h4>
+                        <p>UI Designer</p>
                     </div>
                 </li>
             </ul>
@@ -103,11 +106,13 @@
     </main>
     <!-- Footer -->
     <footer>
-            <a href="">WebStudio</a>
+            <a href="" class="logo"><span class="logo-part">Web</span>Studio</a>
         <address>
-            <li><a href=""></a>Адреса</li>
-            <li><a href=""></a>Імейл</li>
-            <li><a href=""></a>Телефон</li>
+            <ul  class="auth-nav list">
+                <li><a class="location" href="">Адреса</a></li>
+                <li><a class="link" href="">Email</a></li>
+                <li><a class="link" href="">Телефон</a></li>
+            </ul>
         </address>
     </footer>
 </body>
