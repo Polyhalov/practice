@@ -113,3 +113,37 @@ body{
         font-weight: 500;
         letter-spacing: 0.48px;
 }
+
+
+
+
+
+/* Portfolio */
+/* Example */
+.example-list .link{
+    text-decoration: none;
+}
+
+.radio{
+    font-family: "Roboto";
+    background-color: #F5F4FA;
+    color: var(--title-text-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
+}
+.radio:focus,
+.radio:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    cursor: pointer ;
+}
+.example-list .title{
+    color: var(--title-text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px
+}
