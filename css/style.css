@@ -16,7 +16,18 @@ body{
 
 .list{
     list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Header */
 .logo{
     font-family: "Raleway", sans-serif;
@@ -28,18 +39,53 @@ body{
 .logo-part{
     color: var(--accent-color)
 }
-
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.site-nav .item{
+    margin-right: 50px;
+}
+.site-nav .item:last-child{
+    margin-right: 0;
+}
+.main-nav{
+    display: flex;
+    outline: 1px solid tomato;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
 .site-nav .link{
+    display: block;
     color: var(--title-text-color);
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+
+
 .site-nav .link:hover,  
 .site-nav .link:focus{
     color: var(--accent-color)
+}
+.auth-nav{
+    display: flex;
+}
+.auth-nav .item{
+    margin-right: 50px;
+}
+.auth-nav .item:last-child{
+    margin-right: 0;
 }
 
 .auth-nav .link {
@@ -49,6 +95,9 @@ body{
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
 }
 
 .auth-nav .link:hover,
@@ -64,8 +113,16 @@ body{
         text-decoration: none;
 }
 /* Hero */
-
+.hero-background{
+    background-color: gray
+}
+.hero{
+    outline: 1px solid tomato;
+    text-align: center;
+}
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--primary-white-color);
     background-color: #212121;
     text-align: center;
@@ -92,7 +149,10 @@ body{
         font-weight: 700;
         line-height: normal;
         letter-spacing: 1.08px;
+        margin-top: 0;
+        margin-bottom: 0;
 }
+
 
 /* Feature */
 .feature-list .title{
@@ -102,6 +162,32 @@ body{
         line-height: normal;
         letter-spacing: 0.42px;
         text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 10px;
+}
+.section-feature{
+    outline: solid 1px tomato;
+}
+.feature-list{
+    display: flex;
+}
+.feature-list .item{
+    width: calc((100% - 90px)/4);
+    /* outline: solid 1px black; */
+    margin-right: 30px;
+}
+.feature-list .item:last-child{
+    margin-right: 0;
+}
+.feature-description {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--primary-text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
 }
 /* Work */
 
