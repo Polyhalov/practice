@@ -9,11 +9,12 @@
     margin-right: 30px;
     margin-bottom: 0;
     height: 294px;
+
+    &:last-child{
+        margin-right: 0;
+    }
 }
 
-.work-list .item:last-child {
-    margin-right: 0;
-}
 
 .title-backdrop {
     position: absolute;

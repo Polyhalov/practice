@@ -15,11 +15,12 @@
 
 .address-nav .item {
     margin-bottom: 9px;
+
+    &:last-child{
+        margin-bottom: 0;;
+    }
 }
 
-.address-nav .item:last-child {
-    margin-bottom: 0;
-}
 
 .address-nav .link {
     text-decoration: none;
@@ -28,12 +29,13 @@
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
 }
 
-.address-nav .link:hover,
-.address-nav .link:focus {
-    color: var(--accent-color);
-}
 
 .down-logo {
     color: white;
@@ -68,16 +70,17 @@
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: rgba(33, 150, 243, 0.00);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    &::placeholder{
+        color: rgba(255, 255, 255, 0.60);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.25;
+            letter-spacing: 0.48px;
+    }
 }
 
-.input-text::placeholder {
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.25;
-    letter-spacing: 0.48px;
-}
 
 .follow {
     margin-left: auto;

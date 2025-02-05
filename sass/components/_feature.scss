@@ -16,6 +16,10 @@
 .feature-list .item {
     width: calc((100% - 90px)/4);
     margin-right: 30px;
+
+    &:last-child{
+        margin-right: 0;
+    }
 }
 
 .feature-picture {
@@ -28,9 +32,6 @@
     margin-bottom: 30px;
 }
 
-.feature-list .item:last-child {
-    margin-right: 0;
-}
 
 .feature-title {
     color: #212121;

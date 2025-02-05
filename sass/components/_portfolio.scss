@@ -9,11 +9,9 @@
 .example-list .link {
     padding: 0;
     margin: 0;
-}
-
-.example-list .link {
     text-decoration: none;
 }
+
 
 
 .example-list .title {
@@ -26,7 +24,10 @@
 
 .example-list .item {
     width: calc((100% - 60px)/3);
-    // height: 404px;
+
+    &:hover .card-text{
+        transform: translateY(0%);
+    }
 }
 
 .example-list .item:hover {
@@ -62,9 +63,6 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.example-list .item:hover .card-text {
-    transform: translateY(0%);
-}
 
 .text-style {
     color: var(--primary-white-color);

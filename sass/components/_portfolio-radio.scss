@@ -6,11 +6,12 @@
 
 .radio-list .item {
     margin-right: 8px;
+
+    &:last-child{
+        margin-right: 0;
+    }
 }
 
-.radio-list .item:last-child {
-    margin-right: 0;
-}
 
 .radio {
     background-color: #F5F4FA;
@@ -24,11 +25,11 @@
     border-radius: 4px;
     border: none;
 
-}
+    &:hover,
+    &:focus{
+        background-color: var(--accent-color);
+            color: var(--primary-white-color);
+            cursor: pointer;
+    }
 
-.radio:focus,
-.radio:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
-    cursor: pointer;
 }
