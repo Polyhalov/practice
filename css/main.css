@@ -653,6 +653,7 @@ img {
 
 .menu-soial {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 15px;
   margin-top: 64px;
 }
