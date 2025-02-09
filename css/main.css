@@ -451,12 +451,12 @@ img {
 
 .team-list {
   display: flex;
+  flex-direction: column;
 }
 
 .team-list .item {
   background-color: #ffffff;
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  margin-bottom: 30px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -472,6 +472,31 @@ img {
   letter-spacing: 0.48px;
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .team-list .item {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    gap: 0;
+  }
+  .team-list .item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+  }
+  .team-list .item:last-child {
+    margin-right: 0;
+  }
+}
 .clients-list {
   display: flex;
 }
