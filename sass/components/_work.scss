@@ -1,40 +1,95 @@
-.work-list {
-    display: flex;
+.section-work {
+    display: none;
 }
 
 
-.work-list .item {
-    position: relative;
-    width: calc((100% - 60px)/3);
-    margin-right: 30px;
-    margin-bottom: 0;
-    height: 294px;
-
-    &:last-child{
-        margin-right: 0;
+@media screen and (min-width:1200px) {
+    .section-work {
+        display: block;
     }
+
+    .work-list {
+        display: flex;
+    }
+
+
+    .work-list .item {
+        position: relative;
+        width: calc((100% - 60px)/3);
+        margin-right: 30px;
+        margin-bottom: 0;
+        height: 294px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+
+    .title-backdrop {
+        position: absolute;
+        background: rgba(47, 48, 58, 0.80);
+        width: 100%;
+        height: 70px;
+        left: 0;
+        bottom: 0;
+    }
+
+    .title-backdrop .title {
+
+        color: var(--primary-white-color);
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
 }
 
 
-.title-backdrop {
-    position: absolute;
-    background: rgba(47, 48, 58, 0.80);
-    width: 100%;
-    height: 70px;
-    left: 0;
-    bottom: 0;
-}
 
-.title-backdrop .title {
+// .work-list {
+//     display: flex;
+// }
 
-    color: var(--primary-white-color);
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
+
+// .work-list .item {
+//     position: relative;
+//     width: calc((100% - 60px)/3);
+//     margin-right: 30px;
+//     margin-bottom: 0;
+//     height: 294px;
+
+//     &:last-child{
+//         margin-right: 0;
+//     }
+// }
+
+
+// .title-backdrop {
+//     position: absolute;
+//     background: rgba(47, 48, 58, 0.80);
+//     width: 100%;
+//     height: 70px;
+//     left: 0;
+//     bottom: 0;
+// }
+
+// .title-backdrop .title {
+
+//     color: var(--primary-white-color);
+//     text-align: center;
+//     font-size: 14px;
+//     font-weight: 700;
+//     letter-spacing: 0.42px;
+//     text-transform: uppercase;
+//     padding-top: 27px;
+//     padding-bottom: 27px;
+//     margin-top: 0;
+//     margin-bottom: 0;
+// }
