@@ -22,10 +22,10 @@
         <nav class="nav-list">
             <a href="./index.html" class="logo"><span class="logo-part">Web</span>Studio</a>
             <ul class="site-nav list">
-                <li class="item"><a class="link" href="./index.html">Студія</a></li>
-                <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a>
+                <li class="item"><a class="link" href="./index.html">Студія</a>
                     <div class="line-bottom"></div>
                 </li>
+                <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
                 <li class="item"><a class="link" href="">Контакти</a></li>
             </ul>
         </nav>
@@ -41,7 +41,39 @@
                     </svg>
                     +38 096 111 11 11</a></li>
         </ul>
+        <button type="button" class="burger-btn" data-open-menu>
+            <svg class="burger-icon">
+                <use href="./images/icon.svg#icon-menu"></use>
+            </svg>
+        </button>
+
     </div>
+    <div class="mobile-menu" data-menu-container>
+        <div class="container mobile-menu-container">
+            <button type="button" class="menu-close-btn" data-close-menu>
+                <svg class="menu-close-icon">
+                    <use href="./images/icon.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="menu-nav list">
+                <li class="menu-nav__item current"><a class="menu-nav__link" href="">Студія</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__link" href="">Портфоліо</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__link" href="">Контакти</a></li>
+            </ul>
+            <ul class="menu-auth list">
+                <li class="menu-auth__item--color menu-auth__item"><a class="menu-auth__link menu-auth__link--color"
+                        href="">+38 096 111 11 11</a></li>
+                <li class="menu-auth__item"> <a class="menu-auth__link" href="">info@devstudio.com</a></li>
+            </ul>
+            <ul class="menu-soial list">
+                <li class="menu-soial__item"><a class="menu-soial__link" href="">Instagram</a></li>
+                <li class="menu-soial__item"><a class="menu-soial__link" href="">Twitter</a></li>
+                <li class="menu-soial__item"><a class="menu-soial__link" href="">Facebook</a></li>
+                <li class="menu-soial__item"><a class="menu-soial__link" href="">Linkedin</a></li>
+            </ul>
+        </div>
+    </div>
+
 </header>
     <main>
         <div class="container">
@@ -58,7 +90,15 @@
             <ul class="example-list list">
                 <li class="item"><a class="link" href="">
                     <div class="card-overlay" >
-                        <img src="./images/portfolio/img.jpg" alt="laptop">
+                        <picture>
+                            <source srcset="./images/adapt/notebook-desktop.jpg 1x, ./images/adapt/notebook-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/adapt/notebook-tablet.jpg 1x, ./images/adapt/notebook-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/adapt/notebook-mobile.jpg 1x, ./images/adapt/notebook-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images/portfolio/img.jpg" alt="Ноутбук">
+                        </picture>
                         <div class="card-text">
                             <p class="text-style">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
@@ -72,7 +112,15 @@
                 </a></li>
             <li class="item"><a class="link" href="">
                 <div class="card-overlay">
-                    <img src="./images/portfolio/img1.jpg" alt="basketball">
+                    <picture>
+                        <source srcset="./images/adapt/basket-desktop.jpg 1x, ./images/adapt/basket-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/adapt/basket-tablet.jpg 1x, ./images/adapt/basket-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/adapt/basket-mobile.jpg 1x, ./images/adapt/basket-mobile@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/portfolio/img1.jpg" alt="Баскетболіст">
+                    </picture>
                     <div class="card-text">
                         <p class="text-style">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                             дозволить відвідувачу отримати
@@ -80,13 +128,21 @@
                     </div>
                 </div>
                     <div class="card-info">
-                        <h3 class="title">Постер New Orlean vs Golden Star</h3>
+                        <h3 class="title">Постер New Orlean vs Gold Star</h3>
                         <p class="position">Дизайн</p>
                     </div>
                 </a></li>
             <li class="item"><a class="link" href="">          
                     <div class="card-overlay">
-                        <img src="./images/portfolio/img2.jpg" alt="stereo">
+                        <picture>
+                            <source srcset="./images/adapt/fish-desktop.jpg 1x, ./images/adapt/fish-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/adapt/fish-tablet.jpg 1x, ./images/adapt/fish-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/adapt/fish-mobile.jpg 1x, ./images/adapt/fish-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images/portfolio/img2.jpg" alt="Ресторан">
+                        </picture>
                         <div class="card-text">
                             <p class="text-style">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
@@ -100,7 +156,15 @@
                 </a></li>
             <li class="item"><a class="link" href="">
                 <div class="card-overlay">
-                    <img src="./images/portfolio/img3.jpg" alt="box">
+                    <picture>
+                        <source srcset="./images/adapt/headphones-desktop.jpg 1x, ./images/adapt/headphones-desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/adapt/headphones-tablet.jpg 1x, ./images/adapt/headphones-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/adapt/headphones-mobile.jpg 1x, ./images/adapt/headphones-mobile@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/portfolio/img3.jpg" alt="Навушники">
+                    </picture>
                     <div class="card-text">
                         <p class="text-style">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                             дозволить відвідувачу отримати
@@ -116,7 +180,13 @@
             <li class="item"><a class="link" href="">
                     
                     <div class="card-overlay">
-                        <img src="./images/portfolio/img4.jpg" alt="pc">
+                        <picture>
+                            <source srcset="./images/adapt/box-desktop.jpg 1x, ./images/adapt/box-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/adapt/box-tablet.jpg 1x, ./images/adapt/box-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/adapt/box-mobile.jpg 1x, ./images/adapt/box-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                            <img src="./images/portfolio/img4.jpg" alt="Коробки">
+                        </picture>
                         <div class="card-text">
                             <p class="text-style">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
@@ -131,7 +201,15 @@
             <li class="item"><a class="link" href="">
                     
                     <div class="card-overlay">
-                        <img src="./images/portfolio/img5.jpg" alt="book">
+                        <picture>
+                            <source srcset="./images/adapt/monitor-desktop.jpg 1x, ./images/adapt/monitor-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/adapt/monitor-tablet.jpg 1x, ./images/adapt/monitor-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/adapt/monitor-mobile.jpg 1x, ./images/adapt/monitor-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images/portfolio/img5.jpg" alt="Монітор">
+                        </picture>
                         <div class="card-text">
                             <p class="text-style">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
@@ -146,7 +224,15 @@
             <li class="item"><a class="link" href="">
                     
                     <div class="card-overlay">
-                        <img src="./images/portfolio/img6.jpg" alt="ticket">
+                        <picture>
+                            <source srcset="./images/adapt/book-desktop.jpg 1x, ./images/adapt/book-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/adapt/book-tablet.jpg 1x, ./images/adapt/book-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/adapt/book-mobile.jpg 1x, ./images/adapt/book-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images/portfolio/img6.jpg" alt="Книга">
+                        </picture>
                         <div class="card-text">
                             <p class="text-style">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
@@ -161,7 +247,15 @@
             <li class="item"><a class="link" href="">
                     
                     <div class="card-overlay">
-                        <img src="./images/portfolio/img7.jpg" alt="developer">
+                        <picture>
+                            <source srcset="./images/adapt/label-desktop.jpg 1x, ./images/adapt/label-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/adapt/label-tablet.jpg 1x, ./images/adapt/label-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/adapt/label-mobile.jpg 1x, ./images/adapt/label-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images/portfolio/img7.jpg" alt="Етикетка">
+                        </picture>
                         <div class="card-text">
                             <p class="text-style">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
@@ -176,7 +270,15 @@
             <li class="item"><a class="link" href="">
                     
                     <div class="card-overlay">
-                        <img src="./images/portfolio/img8.jpg" alt="developer">
+                        <picture>
+                            <source srcset="./images/adapt/laptop-desktop.jpg 1x, ./images/adapt/laptop-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/adapt/laptop-tablet.jpg 1x, ./images/adapt/laptop-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/adapt/laptop-mobile.jpg 1x, ./images/adapt/laptop-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images/portfolio/img8.jpg" alt="Ноутбук">
+                        </picture>
                         <div class="card-text">
                             <p class="text-style">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
@@ -195,47 +297,48 @@
 
     <footer class="footer-background">
         <div class="container info">
-            <div>
-                <a href="./index.html" class="logo down-logo"><span class="logo-part">Web</span>Studio</a>
-                <ul class="address-nav list">
-                    <li class="item"><a class="location" href="">м. Київ, пр-т Лесі Українки, 26</a></li>
-                    <li class="item"><a class="link" href="">info@devstudio.com</a></li>
-                    <li class="item"><a class="link" href="">+38 096 111 11 11</a></li>
-                </ul>
-            </div>
-            <!-- </address> -->
-            <div class="down-link">
-                <h3 class="link-title"> Приєднуйтесь</h3>
-                <ul class="list social-list">
-                    <li class="info-item">
-                        <a class="icon down" href="./portfolio.html">
-                            <svg width="20" height="20">
-                                <use href="./images/icon.svg#icon-instagram-2"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="info-item">
-                        <a class="icon down" href="">
-                            <svg width="20" height="20">
-                                <use href="./images/icon.svg#icon-twitter-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="info-item">
-                        <a class="icon down" href="">
-                            <svg class="social-icon" width="20" height="20">
-                                <use href="./images/icon.svg#icon-facebook-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="info-item">
-                        <a class="icon down" href="">
-                            <svg width="20" height="20">
-                                <use href="./images/icon.svg#icon-linkedin-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <div class="footer-friends">
+                <div>
+                    <a href="./index.html" class="logo down-logo"><span class="logo-part">Web</span>Studio</a>
+                    <ul class="address-nav list">
+                        <li class="item"><a class="location" href="">м. Київ, пр-т Лесі Українки, 26</a></li>
+                        <li class="item"><a class="link" href="">info@devstudio.com</a></li>
+                        <li class="item"><a class="link" href="">+38 096 111 11 11</a></li>
+                    </ul>
+                </div>
+                <div class="down-link">
+                    <h3 class="link-title link-title-footer"> Приєднуйтесь</h3>
+                    <ul class="list social-list">
+                        <li class="info-item">
+                            <a class="icon down" href="./portfolio.html">
+                                <svg width="20" height="20">
+                                    <use href="./images/icon.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a class="icon down" href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/icon.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a class="icon down" href="">
+                                <svg class="social-icon" width="20" height="20">
+                                    <use href="./images/icon.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a class="icon down" href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/icon.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="follow">
                 <h3 class="link-title">Підпишіться на розсилку</h3>
@@ -251,6 +354,7 @@
             </div>
         </div>
     </footer>
+        <script src="./js/mobile-menu.js"></script>
     </body>
     
     </html>
